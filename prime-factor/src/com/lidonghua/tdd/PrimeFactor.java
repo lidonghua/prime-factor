@@ -8,8 +8,6 @@ public class PrimeFactor
     public List<Integer> factor(int number)
     {
         ArrayList<Integer> primeFactors = new ArrayList<>();
-        if (number < 2)
-            return primeFactors;
         for (int factor = 2; number > 1; factor++)
             for ( ; number % factor == 0; number /= factor)
                 primeFactors.add(factor);
