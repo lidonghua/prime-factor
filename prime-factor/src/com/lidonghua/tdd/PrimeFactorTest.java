@@ -21,4 +21,10 @@ public class PrimeFactorTest
     {
         assertEquals(Arrays.asList(2), primeFactor.factor(2));
     }
+
+    @Test
+    public void primeFactorOfThreeIsThree()
+    {
+        assertEquals(Arrays.asList(3), primeFactor.factor(3));
+    }
 }
