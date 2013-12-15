@@ -27,4 +27,10 @@ public class PrimeFactorTest
     {
         assertEquals(Arrays.asList(3), primeFactor.factor(3));
     }
+
+    @Test
+    public void primeFactorOfFourIsTwoTwos()
+    {
+        assertEquals(Arrays.asList(2, 2), primeFactor.factor(4));
+    }
 }
