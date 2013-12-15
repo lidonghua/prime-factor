@@ -15,4 +15,10 @@ public class PrimeFactorTest
     {
         assertEquals(Arrays.asList(), primeFactor.factor(0));
     }
+
+    @Test
+    public void primeFactorOfTwoIsTwo()
+    {
+        assertEquals(Arrays.asList(2), primeFactor.factor(2));
+    }
 }
