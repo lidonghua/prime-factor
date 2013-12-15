@@ -10,14 +10,15 @@ public class PrimeFactor
         ArrayList<Integer> primeFactors = new ArrayList<>();
         if (number < 2)
             return primeFactors;
-        while (number % 2 == 0)
+        int factor = 2;
+        while (number > 1)
         {
-            primeFactors.add(2);
-            number /= 2;
-        }
-        if (number % 3 == 0)
-        {
-            primeFactors.add(3);
+            while (number % factor == 0)
+            {
+                primeFactors.add(factor);
+                number /= factor;
+            }
+            factor++;
         }
         return primeFactors;
     }
