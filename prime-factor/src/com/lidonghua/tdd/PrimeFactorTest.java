@@ -29,8 +29,14 @@ public class PrimeFactorTest
     }
 
     @Test
-    public void primeFactorOfFourIsTwoTwos()
+    public void primeFactorsOfFourIsTwoTwos()
     {
         assertEquals(Arrays.asList(2, 2), primeFactor.factor(4));
+    }
+
+    @Test
+    public void primeFactorsOfALargerNumber()
+    {
+        assertEquals(Arrays.asList(2, 2, 2, 3, 5, 17, 17, 31), primeFactor.factor(1_075_080));
     }
 }
